@@ -1,36 +1,29 @@
-# Vendor Risk Scoring Tool
-A Python-based utility to automate the calculation of risk scores for third-party vendors based on security assessment data.
+# 🛡️ Third-Party Risk Management (TPRM) Tool
 
-## 📌 Project Overview
-In many GRC environments, vendor assessments are manual and inconsistent. This tool standardizes the evaluation process by applying a weighted scoring logic to vendor security posture, aligning with **NIST SP 800-161** and **ISO 27001** supply chain requirements.
+This repository showcases a full-cycle GRC (Governance, Risk, and Compliance) automation project. It includes a functional vendor scoring tool, a formal security policy, and an automated audit trail.
 
-![Vendor Risk Assessment Demo](assessment_demo.jpg)
+## 📂 Project Navigation
+*   **[Security Policy](./POLICY.md):** Defines the "Governance" and scoring weights used for assessments.
+*   **[Scoring Tool](./score_vendor.py):** The Python-based "Risk Management" tool used to evaluate vendors.
+*   **[Risk Register](./risk_register.csv):** The "Compliance" evidence and historical audit log.
 
-## 🚀 Key Features
-* **Automated Scoring:** Calculates residual risk based on control effectiveness and data sensitivity.
-* **Risk Tiering:** Automatically categorizes vendors into Critical, High, Medium, or Low risk tiers.
-* **Consistency:** Removes human bias from the initial assessment phase.
-* **Reporting:** Generates a structured output for GRC analyst review.
+---
 
-## 🛠️ Installation & Usage
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com
-   cd vendor-risk-tool
-   ```
-2. **Run the tool:**
-   ```bash
-   python score_vendor.py
-   ```
+## 🚀 How it Works
+The tool automates vendor onboarding by evaluating three critical security controls:
+1.  **MFA Implementation** (Weighted 40%)
+2.  **Data Encryption** (Weighted 40%)
+3.  **SOC 2 Compliance** (Weighted 20%)
 
-## ⚖️ Scoring Methodology
-This tool utilizes a weighted matrix to evaluate risk across four primary domains:
-1. **Data Privacy:** Encryption standards and data handling practices.
-2. **Access Control:** MFA implementation and least-privilege enforcement.
-3. **Incident Response:** Evidence of tested IR plans.
-4. **Compliance:** Presence of SOC 2 Type II or ISO 27001 certifications.
+### 🛠️ Execution Example
+Testing was performed in a sandboxed **Virtual Machine environment** to ensure data integrity and secure execution.
 
-## 📈 Future Roadmap
-- [ ] Integration with GitHub Actions for automated vendor "re-checks."
-- [ ] Export functionality to CSV/PDF for executive reporting.
-- [ ] API integration with common GRC platforms.
+![Assessment Demo](./assessment_demo.jpg)
+
+---
+
+## 📈 Key GRC Skills Demonstrated
+*   **Governance:** Developing formal security policies and approval thresholds.
+*   **Risk Management:** Quantifying risk using weighted scoring models.
+*   **Compliance Automation:** Generating immutable audit logs (CSV) with automated timestamps.
+*   **Technical Literacy:** Python scripting and version control (GitHub).
