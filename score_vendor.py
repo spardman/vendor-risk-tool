@@ -40,5 +40,3 @@ def run_assessment():
 
 if __name__ == "__main__":
     run_assessment()
-
-
