@@ -4,6 +4,8 @@ A Python-based utility to automate the calculation of risk scores for third-part
 ## 📌 Project Overview
 In many GRC environments, vendor assessments are manual and inconsistent. This tool standardizes the evaluation process by applying a weighted scoring logic to vendor security posture, aligning with **NIST SP 800-161** and **ISO 27001** supply chain requirements.
 
+![Vendor Risk Assessment Demo](assessment_demo.jpg)
+
 ## 🚀 Key Features
 * **Automated Scoring:** Calculates residual risk based on control effectiveness and data sensitivity.
 * **Risk Tiering:** Automatically categorizes vendors into Critical, High, Medium, or Low risk tiers.
